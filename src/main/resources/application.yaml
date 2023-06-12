@@ -1,0 +1,15 @@
+server:
+  port: 7777
+  servlet:
+    context-path: /api/v3
+  ssl:
+    key-alias: spring-https
+    key-store: classpath:javahttps.jks
+    key-store-type: JKS
+    key-password: password
+
+
+
+
+
+    #keytool -genkey -alias spring-https -storetype JKS -keyalg RSA -keysize 2048 -validity 365 -keystore javahttps.jks
